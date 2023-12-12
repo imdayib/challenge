@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.container{
+    height: 50vh;
+    background-color: #84668f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#dynamicImg,
+#staticImg{
+    height: 100%;
+    width: 180px;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#staticImg{
+    background-image: url('./image/biixi0.png');
+}
+button{
+    pointer-events: fill;
+    border: 0;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 33px;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(98,18,173);
+    cursor: pointer;
+}
+.sax{
+    color: green;
+}
+.qalad{
+    color: red;
+}
+@media  only screen and (min-width: 768px){
+    #dynamicImg,
+    #staticImg{
+        width: 250px;
+    }
+
+}
+    
